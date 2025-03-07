@@ -56,14 +56,14 @@ const TestimonialCarousel = () => {
         {/* Navigation Buttons */}
         <button
           ref={prevRef}
-          className="absolute left-2 md:left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 md:p-4 rounded-full shadow-md z-10 hover:bg-gray-900 transition flex items-center justify-center w-10 h-10 md:w-12 md:h-12"
+          className="absolute left-2 md:left-0 top-1/2 transform -translate-y-1/2 bg-[#244a78] text-white p-3 md:p-4 rounded-full shadow-md z-10 hover:bg-gray-900 transition flex items-center justify-center w-10 h-10 md:w-12 md:h-12"
         >
           <span className="text-xl md:text-2xl">&lt;</span>
         </button>
 
         <button
           ref={nextRef}
-          className="absolute right-2 md:right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 md:p-4 rounded-full shadow-md z-10 hover:bg-gray-900 transition flex items-center justify-center w-10 h-10 md:w-12 md:h-12"
+          className="absolute right-2 md:right-0 top-1/2 transform -translate-y-1/2 bg-[#244a78] text-white p-3 md:p-4 rounded-full shadow-md z-10 hover:bg-gray-900 transition flex items-center justify-center w-10 h-10 md:w-12 md:h-12"
         >
           <span className="text-xl md:text-2xl">&gt;</span>
         </button>

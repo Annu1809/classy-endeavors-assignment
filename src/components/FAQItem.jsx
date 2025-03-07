@@ -3,10 +3,10 @@ import { Plus, Minus } from "lucide-react"; // Icons for expand/collapse
 
 const FAQItem = ({ question, answer, isOpen, onToggle }) => {
   return (
-    <div className="border rounded-lg overflow-hidden shadow-md mb-3">
+    <div className=" rounded-lg overflow-hidden shadow-md mb-3 border">
       <button
-        className={`w-full flex justify-between items-center p-4 text-lg font-semibold transition 
-        ${isOpen ? "bg-blue-950 text-white" : "bg-blue-950 text-white"}`}
+        className={`w-full flex justify-between items-center p-4 md:p-8 text-lg font-semibold transition 
+        ${isOpen ? "bg-[#244a78] text-white" : "bg-[#244a78] text-white"}`}
         onClick={onToggle}
       >
         {question}
@@ -15,7 +15,7 @@ const FAQItem = ({ question, answer, isOpen, onToggle }) => {
 
       {/* Show answer only if isOpen is true */}
       {isOpen && (
-        <div className="p-4 bg-white text-gray-700 text-sm border-t shadow-md shadow-fuchsia-600">{answer}</div>
+        <div className="p-4 bg-white text-gray-700 text-md border-t shadow-md shadow-fuchsia-600">{answer}</div>
       )}
     </div>
   );

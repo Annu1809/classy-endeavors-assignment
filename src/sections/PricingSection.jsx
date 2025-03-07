@@ -69,25 +69,27 @@ const PricingSection = () => {
     ],
   };
 
-  return (
-    <div className="bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-indigo-400 via-slate-600 to-indigo-200">
-    <section id="pricing" className="py-12 px-6 text-center max-w-6xl mx-auto  ">
+  return ( 
+    <div className="bg-gradient-to-b from-white to-gray-200 ">
+    <section id="pricing" className=" text-center md:py-14 md:px-12 px-8  mx-auto  ">
       <h2 className="text-3xl font-bold mb-4">Pick your plan. We make this part easy too.</h2>
 
       {/* Toggle Button Component */}
       <PricingToggleButton billingCycle={billingCycle} setBillingCycle={setBillingCycle} />
 
       {/* Pricing Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-        {pricingPlans[billingCycle].map((plan, index) => (
-          <PricingCard
-            key={index}
-            plan={plan}
-            isSelected={selectedPlan === index} // Highlight selected card
-            onSelect={() => setSelectedPlan(index)} // Set selected card on click
-          />
-        ))}
-      </div>
+      
+      <div className="flex justify-evenly mt-6 flex-wrap flex-row py-4 gap-y-20">
+  {pricingPlans[billingCycle].map((plan, index) => (
+    <PricingCard
+      key={index}
+      plan={plan}
+      isSelected={selectedPlan === index} // Highlight selected card
+      onSelect={() => setSelectedPlan(index)} // Set selected card on click
+    />
+  ))}
+</div>
+
     </section>
     </div>
   );

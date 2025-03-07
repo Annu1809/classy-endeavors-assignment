@@ -7,7 +7,7 @@ const TestimonialCard = ({ image, review }) => {
       <img
         src={image}
         alt="User"
-        className="w-10 h-10 relative mr-56 rounded-full border-2 border-white -mt-6"
+        className="w-10 h-10 relative ml-5 mr-4 lg:ml-5 lg:mr-72 rounded-full border-2 border-white -mt-6"
       />
       <p className="text-gray-700 mt-3 text-center">{review}</p>
       <div className="flex mt-4 text-yellow-500">

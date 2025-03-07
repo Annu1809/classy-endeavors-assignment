@@ -5,7 +5,7 @@ const PricingToggleButton = ({ billingCycle, setBillingCycle }) => {
     <div className="flex justify-center mb-6">
       <button
         className={`px-6 py-2 rounded-l-full transition ${
-          billingCycle === "monthly" ? "bg-blue-950 text-white" : "bg-gray-200 text-gray-800"
+          billingCycle === "monthly" ? "bg-[#244a78] text-white" : "bg-gray-200 text-gray-800"
         }`}
         onClick={() => setBillingCycle("monthly")}
       >
@@ -13,7 +13,7 @@ const PricingToggleButton = ({ billingCycle, setBillingCycle }) => {
       </button>
       <button
         className={`px-6 py-2 rounded-r-full transition ${
-          billingCycle === "annually" ? "bg-blue-950 text-white" : "bg-gray-200 text-gray-800"
+          billingCycle === "annually" ? "bg-[#244a78] text-white" : "bg-gray-200 text-gray-800"
         }`}
         onClick={() => setBillingCycle("annually")}
       >

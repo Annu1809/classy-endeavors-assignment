@@ -8,6 +8,7 @@ import FeatureSection from './sections/FeatureSection'
 import TestimonialCarousel from './components/TestimonialCarousel/TestimonialCarousel'
 import PricingSection from './sections/PricingSection'
 import FAQSection from './sections/FAQSection'
+import FooterSection from './sections/FooterSection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
       <WhyChooseUs/>
       <PricingSection/>
       <FAQSection />
+      <FooterSection/>
      </div>
     
   )

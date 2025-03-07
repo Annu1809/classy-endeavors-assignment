@@ -17,7 +17,7 @@ const FAQSection = () => {
   };
 
   return (
-    <div id="faq" className="max-w-3xl mx-auto p-6 ">
+    <div id="faq" className="max-w-6xl mx-auto p-8 ">
       <h2 className="text-2xl font-bold text-center mb-4 ">FAQs</h2>
       {faqs.map((faq, index) => (
         <FAQItem
