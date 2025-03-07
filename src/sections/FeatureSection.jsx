@@ -37,7 +37,7 @@ const FeatureSection = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.5 }}
-              className="bg-gradient-to-r from-[#80BBEB] to-[#254A76] text-transparent bg-clip-text sm:w-32 w-24 md:w-64 p-2"
+              className="bg-gradient-to-r from-[#80BBEB] to-[#254A76] text-transparent bg-clip-text sm:w-32 w-24 md:w-72 p-2"
             >
               {words[index]}
             </motion.span>{" "}
